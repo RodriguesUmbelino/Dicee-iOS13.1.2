@@ -18,9 +18,9 @@ class ViewController: UIViewController {
         
         let dadoArray = [ #imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")]
  
-            deciImageVeiw1.image = dadoArray[Int.random(in: 0...5)]
+        deciImageVeiw1.image = dadoArray.randomElement()
         
-            diceImageView1.image = dadoArray[Int.random(in: 0...5)]
+        diceImageView1.image = dadoArray.randomElement()
         
          
         
